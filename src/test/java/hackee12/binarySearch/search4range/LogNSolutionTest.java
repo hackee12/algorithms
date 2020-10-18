@@ -1,4 +1,4 @@
-package hackee12.binary_search.search4range;
+package hackee12.binarySearch.search4range;
 
 import org.junit.Test;
 

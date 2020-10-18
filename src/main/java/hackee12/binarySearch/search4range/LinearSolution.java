@@ -1,4 +1,4 @@
-package hackee12.binary_search.search4range;
+package hackee12.binarySearch.search4range;
 
 public class LinearSolution {
     public int[] searchRange(int[] nums, int target) {

@@ -1,4 +1,4 @@
-package hackee12.binary_search.findKClosestElements;
+package hackee12.binarySearch.findKClosestElements;
 
 import java.util.LinkedList;
 import java.util.List;
