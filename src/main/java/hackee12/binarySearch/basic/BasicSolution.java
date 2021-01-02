@@ -2,7 +2,7 @@ package hackee12.binarySearch.basic;
 
 import java.util.Objects;
 
-public class BinarySearchSolution {
+public class BasicSolution {
 
     public int search(int[] nums, int target) {
         if (Objects.isNull(nums) || nums.length == 0) return -1;

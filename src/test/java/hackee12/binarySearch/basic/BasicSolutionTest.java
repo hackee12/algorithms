@@ -6,9 +6,9 @@ import java.util.Arrays;
 
 import static org.junit.Assert.assertEquals;
 
-public class BinarySearchSolutionTest {
+public class BasicSolutionTest {
 
-    private static final BinarySearchSolution solution = new BinarySearchSolution();
+    private static final BasicSolution solution = new BasicSolution();
 
     @Test(timeout = 1000L)
     public void test() {
