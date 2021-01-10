@@ -18,13 +18,13 @@ public class LookupNoSetSolution implements Solution {
 
         if (s == null || s.length() == 0) return 0;
 
-        char[] arr = s.toCharArray();
         int[] lookup = new int[256];
         Arrays.fill(lookup, -1);
+
         int maxLength = 0;
         int subBegin = 0;
-        for (int i = 0; i < arr.length; i++) {
-            char currentChar = arr[i];
+        for (int i = 0; i < s.length(); i++) {
+            char currentChar = s.charAt(i);
             if (lookup[currentChar] >= subBegin) {
                 subBegin = lookup[currentChar] + 1;
             }
