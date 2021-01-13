@@ -1,5 +1,6 @@
 package hackee12.linkedList.delete_nodes_having_duplicates;
 
+import hackee12.linkedList.ListNode;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

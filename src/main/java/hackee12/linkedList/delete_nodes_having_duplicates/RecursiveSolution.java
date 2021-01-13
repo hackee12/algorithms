@@ -1,5 +1,7 @@
 package hackee12.linkedList.delete_nodes_having_duplicates;
 
+import hackee12.linkedList.ListNode;
+
 import java.util.Objects;
 
 public class RecursiveSolution {
