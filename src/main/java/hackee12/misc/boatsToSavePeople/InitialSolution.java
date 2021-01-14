@@ -2,11 +2,11 @@ package hackee12.misc.boatsToSavePeople;
 
 import hackee12.MySolution;
 
-class InitialSolution implements Problem, MySolution {
+class InitialSolution implements MinRescueBoatsProblem, MySolution {
 
     @Override
-    public int numRescueBoats(int[] people, int limit) {
-        int[] weights = new int[limit + 1];
+    public int numRescueBoats(int[] people, int boatWeightLimit) {
+        int[] weights = new int[boatWeightLimit + 1];
         for (int w : people) {
             weights[w] += 1;
         }
@@ -15,7 +15,7 @@ class InitialSolution implements Problem, MySolution {
             while (weights[i] > 0) {
                 weights[i] -= 1;
                 boats++;
-                for (int e = limit - i; e > 0; e--) {
+                for (int e = boatWeightLimit - i; e > 0; e--) {
                     if (weights[e] > 0) {
                         weights[e] -= 1;
                         break;
