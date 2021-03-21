@@ -2,7 +2,7 @@ package hackee12.misc.boatsToSavePeople;
 
 import hackee12.MySolution;
 
-class InitialSolution implements MinRescueBoatsProblem, MySolution {
+class ImprovedSolution implements MinRescueBoatsProblem, MySolution {
 
     @Override
     public int numRescueBoats(int[] weights, int boatWeightLimit) {
@@ -11,13 +11,17 @@ class InitialSolution implements MinRescueBoatsProblem, MySolution {
             weightsLookup[w] += 1;
         }
         int boats = 0;
-        for (int i = weightsLookup.length - 1; i >= 1; i--) {
+        int heavyPointer = weightsLookup.length - 1;
+        int lightPointer = 1;
+        for (int i = heavyPointer; i >= 1; i--) {
             while (weightsLookup[i] > 0) {
                 weightsLookup[i] -= 1;
                 boats++;
-                for (int e = boatWeightLimit - i; e > 0; e--) {
-                    if (weightsLookup[e] > 0) {
-                        weightsLookup[e] -= 1;
+                for (int j = lightPointer; j + i <= boatWeightLimit; j++) {
+                    if (weightsLookup[j] == 0) {
+                        lightPointer++;
+                    } else {
+                        weightsLookup[j] -= 1;
                         break;
                     }
                 }
