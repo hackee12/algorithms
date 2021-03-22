@@ -1,4 +1,4 @@
-package hackee12.arrays;
+package hackee12.arrays.rotateArray;
 
 import hackee12.MySolution;
 
