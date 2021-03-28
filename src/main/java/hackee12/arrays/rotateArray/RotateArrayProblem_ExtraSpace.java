@@ -2,7 +2,7 @@ package hackee12.arrays.rotateArray;
 
 import hackee12.MySolution;
 
-public class RotateArrayProblem_Initial implements RotateArrayProblem, MySolution {
+public class RotateArrayProblem_ExtraSpace implements RotateArrayProblem, MySolution {
 
     @Override
     public void rotate(int[] nums, int k) {

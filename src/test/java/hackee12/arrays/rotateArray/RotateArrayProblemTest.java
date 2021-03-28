@@ -8,19 +8,18 @@ import org.junit.runners.Parameterized.Parameters;
 import static org.junit.Assert.assertArrayEquals;
 
 @RunWith(Parameterized.class)
-public class RotateArrayProblem_InitialTest {
+public class RotateArrayProblemTest {
+
+    private static final RotateArrayProblem solution = new RotateArrayProblem_InPlaceReverse();
 
     private final int[] nums;
     private final int times;
     private final int[] expected;
 
-    private final RotateArrayProblem solution;
-
-    public RotateArrayProblem_InitialTest(int[] nums, int times, int[] expected) {
+    public RotateArrayProblemTest(int[] nums, int times, int[] expected) {
         this.expected = expected;
         this.nums = nums;
         this.times = times;
-        this.solution = new RotateArrayProblem_Initial();
     }
 
     @Parameters
