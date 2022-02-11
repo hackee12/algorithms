@@ -1,6 +1,6 @@
-package hackee12.arrays.removeDuplicatesFromSortedArray;
+package hackee12.arrays.removeDuplicatesFromSorted;
 
-public interface RemoveDuplicatesFromSortedArray {
+public interface RemoveDuplicatesFromSorted {
     /**
      * Removes duplicates from the sorted input array of integers. Modifies input array in-place.
      * Consumes O(1) space, O(N) iterations.

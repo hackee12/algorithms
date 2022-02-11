@@ -1,6 +1,6 @@
-package hackee12.arrays.removeDuplicatesFromSortedArray;
+package hackee12.arrays.removeDuplicatesFromSorted;
 
-public class RemoveDuplicatesFromSortedArrayNaiveSolution implements RemoveDuplicatesFromSortedArray {
+public class RemoveDuplicatesFromSortedNaiveSolution implements RemoveDuplicatesFromSorted {
     @Override
     public int removeDuplicates(int[] numbers) {
         if (numbers == null) {

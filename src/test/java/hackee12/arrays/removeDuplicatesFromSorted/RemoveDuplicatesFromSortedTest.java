@@ -1,4 +1,4 @@
-package hackee12.arrays.removeDuplicatesFromSortedArray;
+package hackee12.arrays.removeDuplicatesFromSorted;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -8,9 +8,9 @@ import org.junit.runners.Parameterized;
 import static java.lang.String.format;
 
 @RunWith(Parameterized.class)
-public abstract class RemoveDuplicatesFromSortedArrayTest {
+public abstract class RemoveDuplicatesFromSortedTest {
 
-    abstract RemoveDuplicatesFromSortedArray getSolution();
+    abstract RemoveDuplicatesFromSorted getSolution();
 
     @Parameterized.Parameter(0)
     public int[] input;
